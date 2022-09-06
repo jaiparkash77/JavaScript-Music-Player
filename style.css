@@ -74,6 +74,10 @@ nav ul li{
     cursor: pointer;
 }
 
+.icons i{
+    margin: 10px 20px;
+}
+
 #myProgressBar{
     width: 80vw;
     cursor: pointer;
@@ -102,6 +106,7 @@ nav ul li{
 
 .timestamp{
     margin: 0 23px;    
+    display: flex;
 }
 
 .timestamp i{
@@ -118,3 +123,68 @@ nav ul li{
     transition: opacity 0.4s ease-in;
     font-family: 'Varela Round', sans-serif;
 }
+
+/* Responsive CSS */
+@media screen and (max-width: 1000px) {
+    .songInfo{
+        position: relative;
+        left: -10vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 10vw;
+    }
+
+    .songItem{
+        height: 60px;
+        display: flex;
+        background-color: white;
+        color: black;
+        margin: 10px 0;
+        align-items: center;
+        border-radius: 34px;
+        font-size: 3vw;
+        width: 100%;
+    }
+
+    .songItem img{
+        width: 30px;
+        margin: 0 10px;
+        border-radius: 34px;
+    }
+
+    .timestamp{
+        font-size: 3vw;
+        display: flex;  
+    }
+
+    .timestamp i{
+        padding: 0 5px;
+    }
+
+    .icons{
+        margin-top: 5px;
+    }
+
+    .songInfo{
+        position: relative;
+        left: -10vw;
+    }
+
+    .icons i{
+        margin: 0px;
+    }       
+    
+  }
+
+  @media screen and (max-width: 270px) {
+    #masterSongName{
+        font-size: 10px;
+    }
+    .songItem{
+        height: 40px;
+    }
+}
+
